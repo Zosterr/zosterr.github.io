@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e4bdd11c89.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estiloCV.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="accesorios/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Curriculum Vitae</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#Datospersonales">
+                <img src="accesorios/Rebel_Alliance_logo.svg.png" alt="Logo navbar" style="width: 40px;"
+                    class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Experiencia" role="button"
+                            data-bs-toggle="dropdown">Experiencia Laboral</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#Senior">Senior Web Developer</a></li>
+                            <li><a class="dropdown-item" href="#Developer">Web Developer</a></li>
+                            <li><a class="dropdown-item" href="#Junior">Junior Web Designer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Habilidades">Habilidades y Conocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Certificaciones">Certificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+
+    <div class="container pt-3" style="font-family: 'Roboto', sans-serif; ">
+        <div class="row">
+
+
+            <section id="Datospersonales">
+                <h1>Datos personales</h1>
+            </section>
+            <div class="col-md-6">
+                <div class="card mb-3; float-start"
+                    style=" max-width: 540px; margin-top: 1.2em; margin-right:1em ; background-color: #faeeee; font-weight: bold; font-size: large; ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img id="imagenperfil" class="card-img-top" src="accesorios/profile luke.webp"
+                                alt="May the force be with you">
+                            <div id="pruebaModal" class="modal">
+                                <span class="close">&times;</span>
+                                <img class="modal-content" id="img01">
+                                <div id="caption"></div>
+                            </div>
+                            <script src="CV.js"></script>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title"
+                                    style="text-align: justify; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-style:oblique;">
+                                    Luke Skywalker</h4>
+                                <p class="card-text">
+                                <p style="font-weight: bold;"> Estudiante de programacion con iniciativa para aprender
+                                    nuevas
+                                    habilidades y con actitud para
+                                    trabajar en equipos multidisciplinarios</p>
+                                </p>
+
+                                <button type="button" class="btn btn-primary; btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#myModal">
+                                    Datos Personales
+                                </button>
+
+
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <div class="modal-header">
+                                                <h4 class="modal-title"><span
+                                                        style="font-weight: bolder; font-size: x-large ; font-family: Arial, Helvetica, sans-serif;">Luke
+                                                        Skywalker</h4></span>
+                                                <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"></button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <ul>
+                                                    <span
+                                                        style="font-weight: bold; font-size: large; font-family: 'Roboto', sans-serif; ">
+                                                        <li>Lugar de Nacimiento: Buenos Aires, Argentina</li>
+                                                        <li> Domicilio: Av. 9 de Julio 6325, CABA</li>
+                                                        <li>Fecha de Nacimiento: 15/5/1990</li>
+                                                        <li>Estado civil: Soltero </li>
+                                                    </span>
+
+                                                </ul>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-danger"
+                                                    data-bs-dismiss="modal">Cerrar</button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+
+                <ul class="list-group list-group-flush " style="width: auto; ">
+
+                    <li class="list-group-item align-items-center d-flex">
+                        <a class="btn text-white btn-floating m-1 me-3"
+                            style="background-color: hsl(0, 91%, 58%);border-radius:rounded;" href="#gmail.com"
+                            role="button">
+                            <i class="fa-regular fa-envelope fa-2x"></i>
+                        </a>
+                        <span style="font-weight: bold; font-size: larger;">Luke.skywalker@gmail.com</span>
+                    </li>
+                    <li class="list-group-item align-items-center d-flex">
+                        <a class="btn text-white btn-floating m-1 me-3" style="background-color: hsl(241, 66%, 29%);"
+                            href="#Telefono" role="button">
+                            <i class="fa-solid fa-phone fa-2x "></i>
+                        </a>
+                        <span style="font-size: larger; font-weight: bold;">(011) 4755-6283</span>
+                    </li>
+                    <li class="list-group-item align-items-center d-flex">
+                        <a class="btn text-white btn-floating m-1 me-3" style="background-color: hsl(199, 98%, 50%);"
+                            href="#Linkedin" role="button">
+                            <i class="fa-brands fa-linkedin fa-2x"></i>
+                        </a>
+                        <span style="font-weight: bold; font-size: larger;">Perfil de Linkedin</span>
+                    </li>
+                    <li class="list-group-item align-items-center d-flex">
+                        <a class="btn text-white btn-floating m-1 me-3" style="background-color: hsl(125, 80%, 40%);"
+                            href="#Whatsapp" role="button">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <span style="font-weight: bold; font-size: larger;">(+54) 1165842039</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div style="margin-top: 2em"></div>
+
+        <div class="offcanvas offcanvas-start text-bg-dark" id="botoncanva">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title"
+                    style="font-weight: bolder; font-style:normal; font-family: Arial, Helvetica, sans-serif;">Portfolio
+                    de trabajos</h2>
+
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="list-group">
+                    <a class="btn text-white btn-lg" style="background-color: #55acee; padding: 1em; margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-twitter me-2"></i>Twitter</a>
+                    <a class="btn text-white btn-lg" style="background-color: #3b5998; padding: 1em; margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-square-facebook me-2"></i>Facebook</a>
+                    <a class="btn text-white btn-lg" style="background-color: #ac2bac; padding: 1em; margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-instagram me-2"></i>Instagram</a>
+                    <a class="btn text-white btn-lg" style="background-color: #c61118; padding: 1em;margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-pinterest me-2"></i>Pinterest</a>
+                    <a class="btn text-white btn-lg" style="background-color: #ed302f; padding: 1em;margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-youtube me-2"></i>Youtube</a>
+                    <a class="btn text-white btn-lg" style="background-color: #333333; padding: 1em;margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-github me-2"></i>Github</a>
+                    <a class="btn text-white btn-lg" style="background-color: #ff4500; padding: 1em;margin: 0.3em;"
+                        href="#!" role="button"><i class="fab fa-reddit-alien me-2"></i>Reddit</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="d-grid">
+            <button class="btn btn-danger  btn-lg container-fluid" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#botoncanva">
+                Podes conocer mas acerca de mis proyectos realizados haciendo click acá
+
+            </button>
+        </div>
+
+        <hr style="margin-top: 4em;">
+
+
+        <section id="Experiencia" style="font-weight: bolder; font-size: 3em; ">
+            <h1>Experiencia Laboral</h1>
+        </section>
+
+        <ul>
+            <li>
+                <section id="Senior" style="padding:60px 20px;">
+                    <h2 style="font-size: xx-large; font-weight: bolder;">Senior Web Developer</h2>
+                </section>
+            </li>
+
+            <h4 style="color: #6c757d; font-weight: bold;"><mark>IBM Argentina</h4></mark>
+
+            <div class="flex-shrink-0">
+                <span class="text-primary; float-md-end "> Febrero 2020 - Enero 2021</span>
+            </div>
+
+            <ul class="list-group list-group-flush w-auto">
+                <li class="list-group-item"><span style="font-size: larger;">Construí una compleja aplicación Ruby On
+                        Rails con 3 APIs públicas, 3 front-ends</li></span>
+                <li class="list-group-item"><span style="font-size: larger;">Disminución de los problemas de producción
+                        diarios</li></span>
+                <li class="list-group-item"><span style="font-size: larger;">Mejoró las respuestas lentas de la API</li>
+                </span>
+                <li class="list-group-item"><span style="font-size: larger;">Implementar nuevas tecnologías y técnicas
+                        para potenciar el sistema</li></span>
+            </ul>
+
+
+            <li>
+                <section id="Developer" style="padding:60px 20px">
+                    <h2 style="font-size: xx-large; font-weight: bolder;">Web Developer</h2>
+                </section>
+            </li>
+
+            <h4 style="color: #6c757d; font-weight: bold"><mark>Intelitec Solutions</h4></mark>
+
+            <div class="flex-shrink-0">
+                <span class="text-primary; float-md-end"> Marzo 2020 - Diciembre 2020</span>
+            </div>
+
+            <ul class="list-group list-group-flush w-auto">
+                <li class="list-group-item"><span style="font-size: larger;">Creacion y mantenimiento de sitios web
+                        usando lenguaje JavaScript y Ruby</li></span>
+                <li class="list-group-item"><span style="font-size: larger;">Participacion en el desarrollo creativo de
+                        diversos sitios</li></span>
+                <li class="list-group-item"><span style="font-size: larger;">UX designer</li></span>
+            </ul>
+
+
+
+
+            <li>
+                <section id="Junior" style="padding:60px 20px">
+                    <h2 style="font-size: xx-large; font-weight: bolder;">Junior Web Designer</h2>
+                </section>
+            </li>
+
+            <h4 style="color: #6c757d; font-weight: bold"><mark>MercadoLibre Argentina</mark></h4>
+
+            <div class="flex-shrink-0">
+                <span class="text-primary; float-md-end"> Agosto 2018 - Noviembre 2019</span>
+            </div>
+
+            <ul class="list-group list-group-flush w-auto">
+                <li class="list-group-item"><span style="font-size: larger;">Desarrollo y mantenimiento de sitios web,
+                        utilizando diversos lenguajes de programacion</li></span>
+                <li class="list-group-item"><span style="font-size: larger;">Colaborar con los Senior developers para
+                        mantenimiento de sitios y bases de datos</li></span>
+            </ul>
+        </ul>
+
+
+        <hr style="margin-top: 4em;">
+
+
+        <section id="Educacion">
+            <h1>Educación</h1>
+        </section>
+
+        <ul>
+            <div class="UBAedu"></div>
+            <img id="imagenesedu" src="accesorios/uba.png">
+            <li style="padding-left: 20px;">
+                <h2 style="font-size: xx-large; font-weight: bolder;">Universidad de Buenos Aires</h2>
+            </li>
+            <blockquote class="blockquote">
+                <p style="font-weight: bold;">Licenciado en ciencias de la comunicacion</p>
+                <footer class="blockquote-footer" style="margin-top: 2em;">Promedio final: 8.25</footer>
+            </blockquote>
+
+            <div class="flex-shrink-0" style="padding: 1em; margin-bottom: 2.5em;"><span
+                    class="text-primary; float-md-end"> Marzo
+                    2015 - Julio 2020</span></div>
+
+
+            <img id="argprograma" src="accesorios/arg-programa.png">
+            <li style="padding-left: 20px;">
+                <h2 style="font-weight: bolder;"> Argentina Programa 4.0</h2>
+            </li>
+
+            <blockquote class="blockquote">
+                <p style="font-weight: bold"> Secretaria de Economía del Conocimiento - Ministerio de Economía</p>
+                <footer class="blockquote-footer" style="margin-top: 2em;">Promedio final: 10 </footer>
+            </blockquote>
+            <div class="flex-shrink-0" style="padding: 1em" ;><span class="text-primary; float-md-end"> Julio 2022 -
+                    Febrero
+                    2023</span></div>
+
+        </ul>
+
+
+        <hr style="margin-top: 4em;">
+
+
+        <section id="Habilidades">
+            <h1>Habilidades y Conocimientos</h1>
+        </section>
+        <ul>
+            <li>
+                <h2 style="font-weight: bolder;">Lenguajes de programacion y herramientas</h2>
+            </li>
+        </ul>
+        
+        <span class="actions">
+            <ul>
+                <li><i class="fa-brands fa-html5"></i></li>
+                <li><i class="fa-brands fa-unity"></i></li>
+                <li><i class="fa-brands fa-python"></i></li>
+                <li><i class="fa-brands fa-react"></i></li>
+                <li><i class="fa-brands fa-square-js"></i></li>
+                <li><i class="fa-brands fa-java"></i></li>
+                <li><i class="fa-brands fa-css3-alt"></i></li>
+            </ul>        
+        </span>
+        
+
+        <ul id="estiloListas" style="list-style-type: none;">
+            <span>
+                <li><i class="fa-solid fa-user-check"></i>
+            </span>
+            Diseño responsivo de paginas web
+            </li>
+            <span>
+                <li><i class="fa-solid fa-user-check"></i>
+            </span>
+            Testing y Debugging
+            </li>
+            <span>
+                <li><i class="fa-solid fa-user-check"></i>
+            </span>
+            Trabajo en equipo
+            </li>
+            <span>
+                <li><i class="fa-solid fa-user-check"></i>
+            </span>
+            Agile development and Scrum
+            </li>
+        </ul>
+
+
+
+        <hr style="margin-top: 4em;">
+
+
+        <section id="Certificaciones">
+            <h1>Certificaciones</h1>
+        </section>
+        <img id="diplomas" src="accesorios/diploma-graduation-certificate-line-and-fill-style-icon-free-vector.jpg">
+        <ul id="estiloListas" style="list-style-type: none;">
+            <span>
+                <li><i class="fa-solid fa-award"></i>
+            </span>
+            Curso de introduccion al Desarrollo Web: HTML y CSS (1/2) - Google Activate
+            </li>
+            <span>
+                <li><i class="fa-solid fa-award"></i>
+            </span>
+            Curso de introduccion al Desarrollo Web: HTML y CSS (2/2) - Google Activate
+            </li>
+            <span>
+                <li><i class="fa-solid fa-award"></i>
+            </span>
+            Argentina Programa 2022 - Primeros pasos del Desarrollo Front-end
+            </li>
+            <span>
+                <li><i class="fa-solid fa-award"></i>
+            </span>
+            Google Analytics Certified Developer
+
+            </li>
+
+
+        </ul>
+
+
+        <hr style="margin-top: 4em;">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
